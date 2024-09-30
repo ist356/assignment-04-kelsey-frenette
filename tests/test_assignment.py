@@ -21,6 +21,7 @@ def test_get_column_names():
     print(f"Columns: {cols}")
     assert cols == ['name', 'age', 'state', 'balance']
 
+ 
 def test_get_columns_of_type():
     df = pd.DataFrame({ 
         "name": ["Alice", "Bob", "Chris", "Dee", "Eddie", "Fiona"],

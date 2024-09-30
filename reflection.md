@@ -22,4 +22,5 @@ Examples:
 **Best Reflection** "I learned when to use while vs for loops. While loops are for sentiel-controlled values (waiting for a condition to occur), vs for loops are for iterating over collections of fixed values."
 
 `--- Reflection Below This Line ---`
-
+I don't understand why the test_assignment.py doesn't run and how to fix it.
+I also found the unibrow coding to be easier than the pandaslib coding because it was much easier for me to conceptualize the code
