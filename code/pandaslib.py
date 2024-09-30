@@ -63,16 +63,16 @@ if __name__ == '__main__':
         "state": ["NY", "PA", "NY", "NY", "PA", "NJ"],
         "balance": [100.0, 200.0, 250.0, 310.0, 100.0, 60.0]
         })
-    cols = get_column_names(df)
-    print(f"Columns: {cols}")
-    cols = get_columns_of_type(df, 'object')
-    print(f"Object Columns: {cols}")
-    cols = get_columns_of_type(df, 'int64')
-    print(f"Int64 Columns: {cols}")
-    cols = get_columns_of_type(df, 'float64')
-    print(f"Float64 Columns: {cols}")
-    unique = get_unique_values(df, 'state')
-    print(f"Unique States: {unique}")
+    cols = get_column_names(df) #get column names
+    print(f"Columns: {cols}") #print column names
+    cols = get_columns_of_type(df, 'object') #get columns of type object
+    print(f"Object Columns: {cols}") #print object columns
+    cols = get_columns_of_type(df, 'int64') #get columns of type int64
+    print(f"Int64 Columns: {cols}") #print int64 columns
+    cols = get_columns_of_type(df, 'float64') #get columns of type float64
+    print(f"Float64 Columns: {cols}") #print float64 columns
+    unique = get_unique_values(df, 'state') #get unique values of state column
+    print(f"Unique States: {unique}") #print unique states
 
 
 
