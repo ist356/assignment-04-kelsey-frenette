@@ -4,12 +4,12 @@ SOLUTION FILE!!!!
 '''
 import pandas as pd
 
-def get_column_names(df : pd.DataFrame) -> list[str]:
+def get_column_names(df : pd.DataFrame) -> list[str]: 
     '''
     Get all column names of a pandas dataframe df
     Returns the names as a list of string
     '''
-    return df.columns.tolist()
+    return df.columns.tolist() #return column names as a list
 
 
 def get_columns_of_type(df : pd.DataFrame, numpy_type: any) -> list[str]:
@@ -17,17 +17,17 @@ def get_columns_of_type(df : pd.DataFrame, numpy_type: any) -> list[str]:
     Return the column names of a pandas dataframe only when 
     the values in the column match the numpy_type
     '''
-    columns = []
-    for col in df.columns:
-        if df[col].dtype == numpy_type:
-            columns.append(col)
+    columns = [] #initialize an empty list
+    for col in df.columns:  #iterate over the columns
+        if df[col].dtype == numpy_type: #check if the column type matches numpy_type
+            columns.append(col) #add the column name to the list
 
 
 def get_unique_values(df : pd.DataFrame, column_name: str) -> list:
     '''
     Get a list of unique values of a column in a pandas dataframe
     '''
-    return df[column_name].unique().tolist()
+    return df[column_name].unique().tolist() #return unique values of the column as a list
 
 def get_file_extension(file_path : str) -> str:
     '''
@@ -37,7 +37,7 @@ def get_file_extension(file_path : str) -> str:
     'countries.json' -> 'json'
 
     '''
-    return file_path.split('.')[-1]
+    return file_path.split('.')[-1] #return the last element of the split string
 
 def load_file(file_path: str, ext: str) -> pd.DataFrame:
     '''
@@ -47,12 +47,12 @@ def load_file(file_path: str, ext: str) -> pd.DataFrame:
     - when csv assume first row is header
     - when json assume record-oriented data
     '''
-    if ext == 'csv':
-        return pd.read_csv(file_path, header=0)
-    elif ext == 'xlsx':
-        return pd.read_excel(file_path)
-    elif ext == 'json':
-        return pd.read_json(file_path, orient='records')
+    if ext == 'csv': #check if the file extension is csv
+        return pd.read_csv(file_path, header=0) #read csv file
+    elif ext == 'xlsx': #check if the file extension is xlsx
+        return pd.read_excel(file_path) #read excel file
+    elif ext == 'json': #check if the file extension is json
+        return pd.read_json(file_path, orient='records') #read json file
     else:
         return None
 
