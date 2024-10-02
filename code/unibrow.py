@@ -1,6 +1,3 @@
-'''
-Solution unibrow.py
-'''
 import pandas as pd
 import streamlit as st
 import pandaslib as pl

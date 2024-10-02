@@ -1,7 +1,3 @@
-'''
-A Library of useful pandas helper functions
-SOLUTION FILE!!!!
-'''
 import pandas as pd
 
 def get_column_names(df : pd.DataFrame) -> list[str]: 
@@ -75,7 +71,3 @@ if __name__ == '__main__':
     print(f"Unique States: {unique}") #print unique states
 
 
-
-
-
-    # solution pandaslib.py
