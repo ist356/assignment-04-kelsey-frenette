@@ -1,7 +1,7 @@
 # Reflection
 
-Student Name:  name
-Sudent Email:  email
+Student Name:  Kelsey Frenette
+Sudent Email:  kfrenett@syr.edu
 
 ## Instructions
 
